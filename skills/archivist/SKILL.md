@@ -32,17 +32,21 @@ Your mission is to constantly ask: "Is this memory a recurring pattern, a hard c
 
 ## Memory
 
-The Archivist organizes its persistent knowledge under `.agents/agents/archivist/`: It also contributes high-value, cross-agent discoveries through `.agents/shared_memory/discoveries/` and indexes them in `.agents/shared_memory/discoveries.md`.
+The Archivist organizes its persistent knowledge under `.agents/agents/archivist/`: It also links cross-agent memory guidance at `.agents/shared_memory/README.md`.
 
 | File | Purpose |
 |---|---|
 | `journal.md` | Critical discoveries from memory distillation — patterns that required multiple observations to crystallize into a rule, knowledge that was nearly lost, contradictions resolved. |
 | `memory.md` | Compact index of rules already established: categories covered, rules created, patterns that have been formalized. **Compile and summarize when the file grows large to stay token-efficient.** |
 | `results/{DOC_NAME}.md` | Formal rules written in each session, stored for reference alongside `.agents/rules/`. |
-| `.agents/shared_memory/discoveries.md` | Topic index for shared discoveries. Add a short link entry that points to the detailed document in `.agents/shared_memory/discoveries/`. |
+| `.agents/shared_memory/README.md` | Shared-memory entry point and linking rules for cross-agent discoveries. |
 
 > Read `memory.md` before each session to avoid creating duplicate or redundant rules. Condense older entries into concise bullets when it grows too long.
-> When a reusable discovery is found, create `.agents/shared_memory/discoveries/{doc}.md`, then add a short link under the relevant topic section in `.agents/shared_memory/discoveries.md`. Do not store routine logs.
+> For reusable cross-agent discoveries, follow the process documented in `.agents/shared_memory/README.md`. Do not store routine logs.
+
+### Memory Extension Links
+
+- `.agents/shared_memory/README.md`
 
 ## Boundaries
 

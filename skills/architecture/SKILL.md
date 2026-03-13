@@ -37,17 +37,21 @@ Your mission is to identify and fix ONE structural inconsistency or architectura
 
 ## Memory
 
-Architect organizes its persistent knowledge under `.agents/agents/architect/`: It also contributes high-value, cross-agent discoveries through `.agents/shared_memory/discoveries/` and indexes them in `.agents/shared_memory/discoveries.md`.
+Architect organizes its persistent knowledge under `.agents/agents/architect/`: It also links cross-agent memory guidance at `.agents/shared_memory/README.md`.
 
 | File | Purpose |
 |---|---|
 | `journal.md` | Critical architectural learnings — recurring anti-patterns in this codebase, boundary leaks that were exceptionally difficult to resolve, rejected structural changes with valuable insights. |
 | `memory.md` | Compact structural map: known boundary violations and their status, established DDD/CQRS conventions in this project, crate responsibilities, areas of persistent architectural debt. **Compile and summarize when the file grows large to stay token-efficient.** |
 | `results/{DOC_NAME}.md` | Architectural decision records, structural reports, and alignment findings from each session. |
-| `.agents/shared_memory/discoveries.md` | Topic index for shared discoveries. Add a short link entry that points to the detailed document in `.agents/shared_memory/discoveries/`. |
+| `.agents/shared_memory/README.md` | Shared-memory entry point and linking rules for cross-agent discoveries. |
 
 > Read `memory.md` before each session to maintain structural continuity. Condense older entries into concise bullets when it grows too long.
-> When a reusable discovery is found, create `.agents/shared_memory/discoveries/{doc}.md`, then add a short link under the relevant topic section in `.agents/shared_memory/discoveries.md`. Do not store routine logs.
+> For reusable cross-agent discoveries, follow the process documented in `.agents/shared_memory/README.md`. Do not store routine logs.
+
+### Memory Extension Links
+
+- `.agents/shared_memory/README.md`
 
 ## Boundaries
 

@@ -32,17 +32,21 @@ Your mission is to identify and fix ONE small bug, add ONE missing test case, or
 
 ## Memory
 
-BugHunter organizes its persistent knowledge under `.agents/agents/bughunter/`: It also contributes high-value, cross-agent discoveries through `.agents/shared_memory/discoveries/` and indexes them in `.agents/shared_memory/discoveries.md`.
+BugHunter organizes its persistent knowledge under `.agents/agents/bughunter/`: It also links cross-agent memory guidance at `.agents/shared_memory/README.md`.
 
 | File | Purpose |
 |---|---|
 | `journal.md` | Critical and non-obvious testing learnings — edge case patterns, flaky test root causes, recurring bug patterns. Only write when there's a genuine insight. |
 | `memory.md` | Compact reference of accumulated knowledge: known fragile areas, established test conventions, mock/fixture patterns that work well in this codebase. **Compile and summarize this file when it grows large to keep token usage efficient.** |
 | `results/{DOC_NAME}.md` | Output of each session — bug reports, test coverage gaps, PR summaries, and QA findings. |
-| `.agents/shared_memory/discoveries.md` | Topic index for shared discoveries. Add a short link entry that points to the detailed document in `.agents/shared_memory/discoveries/`. |
+| `.agents/shared_memory/README.md` | Shared-memory entry point and linking rules for cross-agent discoveries. |
 
 > Use `memory.md` as your working knowledge base before each session. Summarize older entries into concise bullets when the file becomes too long.
-> When a reusable discovery is found, create `.agents/shared_memory/discoveries/{doc}.md`, then add a short link under the relevant topic section in `.agents/shared_memory/discoveries.md`. Do not store routine logs.
+> For reusable cross-agent discoveries, follow the process documented in `.agents/shared_memory/README.md`. Do not store routine logs.
+
+### Memory Extension Links
+
+- `.agents/shared_memory/README.md`
 
 ## Sample Commands You Can Use
 

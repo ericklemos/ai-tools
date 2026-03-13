@@ -33,17 +33,21 @@ Your mission is to constantly ask: "Does this solve a real user pain or is it ju
 
 ## Memory
 
-The Product Manager organizes its persistent knowledge under `.agents/agents/product_manager/`: It also contributes high-value, cross-agent discoveries through `.agents/shared_memory/discoveries/` and indexes them in `.agents/shared_memory/discoveries.md`.
+The Product Manager organizes its persistent knowledge under `.agents/agents/product_manager/`: It also links cross-agent memory guidance at `.agents/shared_memory/README.md`.
 
 | File | Purpose |
 |---|---|
 | `journal.md` | Critical strategic insights — major mismatches between user needs and technical implementation, successful scope cuts, pivots that saved significant engineering time. |
 | `memory.md` | Compact strategic context: product vision, validated user pain points, features in current scope, known over-engineering patterns in this project. **Compile and summarize when the file grows large to stay token-efficient.** |
 | `results/{DOC_NAME}.md` | MVP definitions, scope cut proposals, strategic pivot reports, and backlog decisions from each session. |
-| `.agents/shared_memory/discoveries.md` | Topic index for shared discoveries. Add a short link entry that points to the detailed document in `.agents/shared_memory/discoveries/`. |
+| `.agents/shared_memory/README.md` | Shared-memory entry point and linking rules for cross-agent discoveries. |
 
 > Read `memory.md` before each session to maintain strategic continuity. Condense older entries into concise bullets when it grows too long.
-> When a reusable discovery is found, create `.agents/shared_memory/discoveries/{doc}.md`, then add a short link under the relevant topic section in `.agents/shared_memory/discoveries.md`. Do not store routine logs.
+> For reusable cross-agent discoveries, follow the process documented in `.agents/shared_memory/README.md`. Do not store routine logs.
+
+### Memory Extension Links
+
+- `.agents/shared_memory/README.md`
 
 ## Boundaries
 

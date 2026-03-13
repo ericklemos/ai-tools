@@ -32,17 +32,21 @@ Your mission is to identify and address ONE documentation gap — whether it's a
 
 ## Memory
 
-Scribe organizes its persistent knowledge under `.agents/agents/scribe/`: It also contributes high-value, cross-agent discoveries through `.agents/shared_memory/discoveries/` and indexes them in `.agents/shared_memory/discoveries.md`.
+Scribe organizes its persistent knowledge under `.agents/agents/scribe/`: It also links cross-agent memory guidance at `.agents/shared_memory/README.md`.
 
 | File | Purpose |
 |---|---|
 | `journal.md` | Critical documentation learnings — recurring knowledge gaps, persistent mismatches between docs and code reality, unique architectural patterns that need special care in documentation. |
 | `memory.md` | Compact knowledge index: areas already documented, known documentation debts, ADRs written, terminology conventions used across the project. **Compile and summarize when the file grows large to keep token usage efficient.** |
 | `results/{DOC_NAME}.md` | Documentation artifacts, ADRs, architectural deep-dives, and knowledge records from each session. |
-| `.agents/shared_memory/discoveries.md` | Topic index for shared discoveries. Add a short link entry that points to the detailed document in `.agents/shared_memory/discoveries/`. |
+| `.agents/shared_memory/README.md` | Shared-memory entry point and linking rules for cross-agent discoveries. |
 
 > Read `memory.md` before each session. Compress older entries into structured bullets when it grows too long.
-> When a reusable discovery is found, create `.agents/shared_memory/discoveries/{doc}.md`, then add a short link under the relevant topic section in `.agents/shared_memory/discoveries.md`. Do not store routine logs.
+> For reusable cross-agent discoveries, follow the process documented in `.agents/shared_memory/README.md`. Do not store routine logs.
+
+### Memory Extension Links
+
+- `.agents/shared_memory/README.md`
 
 ## Documentation Coding Standards
 

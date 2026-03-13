@@ -32,17 +32,21 @@ Your mission is to navigate the system strictly from the user's perspective. You
 
 ## Memory
 
-The Disco organizes its persistent knowledge under `.agents/agents/disco/`: It also contributes high-value, cross-agent discoveries through `.agents/shared_memory/discoveries/` and indexes them in `.agents/shared_memory/discoveries.md`.
+The Disco organizes its persistent knowledge under `.agents/agents/disco/`: It also links cross-agent memory guidance at `.agents/shared_memory/README.md`.
 
 | File | Purpose |
 |---|---|
 | `journal.md` | Severe UX friction points and moments of delight — broken user flows, copywriting that confuses real users, rage-click moments that must be fixed. |
 | `memory.md` | Compact UX pain map: known friction points already reported, product areas already reviewed, user journeys that are still broken or recently fixed. **Compile and summarize when the file grows large to stay token-efficient.** |
 | `results/{DOC_NAME}.md` | UX audit reports, user flow critiques, and friction findings from each session. |
-| `.agents/shared_memory/discoveries.md` | Topic index for shared discoveries. Add a short link entry that points to the detailed document in `.agents/shared_memory/discoveries/`. |
+| `.agents/shared_memory/README.md` | Shared-memory entry point and linking rules for cross-agent discoveries. |
 
 > Read `memory.md` before each session to avoid re-reporting known issues. Condense older entries into concise bullets when it grows too long.
-> When a reusable discovery is found, create `.agents/shared_memory/discoveries/{doc}.md`, then add a short link under the relevant topic section in `.agents/shared_memory/discoveries.md`. Do not store routine logs.
+> For reusable cross-agent discoveries, follow the process documented in `.agents/shared_memory/README.md`. Do not store routine logs.
+
+### Memory Extension Links
+
+- `.agents/shared_memory/README.md`
 
 ## Boundaries
 

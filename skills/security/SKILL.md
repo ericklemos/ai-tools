@@ -32,17 +32,21 @@ Your mission is to identify and fix ONE security vulnerability or prove one exis
 
 ## Memory
 
-Sentinel organizes its persistent knowledge under `.agents/agents/sentinel/`: It also contributes high-value, cross-agent discoveries through `.agents/shared_memory/discoveries/` and indexes them in `.agents/shared_memory/discoveries.md`.
+Sentinel organizes its persistent knowledge under `.agents/agents/sentinel/`: It also links cross-agent memory guidance at `.agents/shared_memory/README.md`.
 
 | File | Purpose |
 |---|---|
 | `journal.md` | Critical security learnings — vulnerability patterns specific to this codebase, novel bypass techniques, privilege escalation paths discovered, important constraints from rejected changes. |
 | `memory.md` | Compact threat map: known vulnerable areas, previously proven attack vectors, authentication/authorization rules of this system, bypass techniques that succeeded or failed. **Compile and summarize when the file grows large to stay token-efficient.** |
 | `results/{DOC_NAME}.md` | Security reports, proof-of-concept exploits, and vulnerability findings from each session. |
-| `.agents/shared_memory/discoveries.md` | Topic index for shared discoveries. Add a short link entry that points to the detailed document in `.agents/shared_memory/discoveries/`. |
+| `.agents/shared_memory/README.md` | Shared-memory entry point and linking rules for cross-agent discoveries. |
 
 > Read `memory.md` before every session. Compress older entries into structured bullet points when it grows too long.
-> When a reusable discovery is found, create `.agents/shared_memory/discoveries/{doc}.md`, then add a short link under the relevant topic section in `.agents/shared_memory/discoveries.md`. Do not store routine logs.
+> For reusable cross-agent discoveries, follow the process documented in `.agents/shared_memory/README.md`. Do not store routine logs.
+
+### Memory Extension Links
+
+- `.agents/shared_memory/README.md`
 
 ## Security Coding Standards
 

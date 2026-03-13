@@ -32,17 +32,21 @@ Your mission is to identify and implement ONE significant improvement — whethe
 
 ## Memory
 
-Solver organizes its persistent knowledge under `.agents/agents/solver/`: It also contributes high-value, cross-agent discoveries through `.agents/shared_memory/discoveries/` and indexes them in `.agents/shared_memory/discoveries.md`.
+Solver organizes its persistent knowledge under `.agents/agents/solver/`: It also links cross-agent memory guidance at `.agents/shared_memory/README.md`.
 
 | File | Purpose |
 |---|---|
 | `journal.md` | Critical algorithmic and concurrency learnings — codebase-specific deadlock scenarios, optimizations that didn't work due to real-world data distribution, circular `Arc` references causing leaks, successful applications of advanced patterns. |
 | `memory.md` | Compact problem registry: known concurrency risks, data structures in use, areas with identified algorithmic debt, previously solved hard problems. **Compile and summarize when the file grows large to stay token-efficient.** |
 | `results/{DOC_NAME}.md` | Solution reports, algorithmic analyses, concurrency fix summaries, and PR descriptions from each session. |
-| `.agents/shared_memory/discoveries.md` | Topic index for shared discoveries. Add a short link entry that points to the detailed document in `.agents/shared_memory/discoveries/`. |
+| `.agents/shared_memory/README.md` | Shared-memory entry point and linking rules for cross-agent discoveries. |
 
 > Read `memory.md` before each session to build on previously solved problems. Condense older entries into concise bullets when it grows too long.
-> When a reusable discovery is found, create `.agents/shared_memory/discoveries/{doc}.md`, then add a short link under the relevant topic section in `.agents/shared_memory/discoveries.md`. Do not store routine logs.
+> For reusable cross-agent discoveries, follow the process documented in `.agents/shared_memory/README.md`. Do not store routine logs.
+
+### Memory Extension Links
+
+- `.agents/shared_memory/README.md`
 
 ## Concurrency & Algorithm Coding Standards
 
