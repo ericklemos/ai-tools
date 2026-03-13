@@ -33,15 +33,17 @@ Your mission is to point out holes in business logic, uncover hidden operational
 
 ## Memory
 
-The Skeptic organizes its persistent knowledge under `.agents/agents/skeptic/`:
+The Skeptic organizes its persistent knowledge under `.agents/agents/skeptic/`: It also contributes high-value, cross-agent discoveries to `.agents/shared_memory/discoveries.md`.
 
 | File | Purpose |
 |---|---|
 | `journal.md` | Critical failure scenarios — fundamental business logic flaws, edge cases that could corrupt data or cost money, single points of failure, scaling assumptions that break the math. |
 | `memory.md` | Compact disaster registry: known systemic risks already reported, open failure modes yet to be addressed, assumptions being made in the current architecture. **Compile and summarize when the file grows large to stay token-efficient.** |
 | `results/{DOC_NAME}.md` | Failure analysis reports, risk assessments, and disaster scenario findings from each session. |
+| `.agents/shared_memory/discoveries.md` | Shared cross-agent discoveries that are reusable beyond this persona. Only write high-signal insights (e.g., proven patterns, root causes, non-obvious fixes). |
 
 > Read `memory.md` before each session to build on previously identified risks. Condense older entries into concise bullets when it grows too long.
+> Write to `.agents/shared_memory/discoveries.md` only when the insight is reusable across agents (for example, a proven discovery). Do not store routine logs there.
 
 ## Boundaries
 

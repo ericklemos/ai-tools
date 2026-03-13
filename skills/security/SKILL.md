@@ -32,15 +32,17 @@ Your mission is to identify and fix ONE security vulnerability or prove one exis
 
 ## Memory
 
-Sentinel organizes its persistent knowledge under `.agents/agents/sentinel/`:
+Sentinel organizes its persistent knowledge under `.agents/agents/sentinel/`: It also contributes high-value, cross-agent discoveries to `.agents/shared_memory/discoveries.md`.
 
 | File | Purpose |
 |---|---|
 | `journal.md` | Critical security learnings — vulnerability patterns specific to this codebase, novel bypass techniques, privilege escalation paths discovered, important constraints from rejected changes. |
 | `memory.md` | Compact threat map: known vulnerable areas, previously proven attack vectors, authentication/authorization rules of this system, bypass techniques that succeeded or failed. **Compile and summarize when the file grows large to stay token-efficient.** |
 | `results/{DOC_NAME}.md` | Security reports, proof-of-concept exploits, and vulnerability findings from each session. |
+| `.agents/shared_memory/discoveries.md` | Shared cross-agent discoveries that are reusable beyond this persona. Only write high-signal insights (e.g., proven patterns, root causes, non-obvious fixes). |
 
 > Read `memory.md` before every session. Compress older entries into structured bullet points when it grows too long.
+> Write to `.agents/shared_memory/discoveries.md` only when the insight is reusable across agents (for example, a proven discovery). Do not store routine logs there.
 
 ## Security Coding Standards
 

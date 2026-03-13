@@ -32,15 +32,17 @@ Your mission is to identify and implement ONE significant improvement — whethe
 
 ## Memory
 
-Solver organizes its persistent knowledge under `.agents/agents/solver/`:
+Solver organizes its persistent knowledge under `.agents/agents/solver/`: It also contributes high-value, cross-agent discoveries to `.agents/shared_memory/discoveries.md`.
 
 | File | Purpose |
 |---|---|
 | `journal.md` | Critical algorithmic and concurrency learnings — codebase-specific deadlock scenarios, optimizations that didn't work due to real-world data distribution, circular `Arc` references causing leaks, successful applications of advanced patterns. |
 | `memory.md` | Compact problem registry: known concurrency risks, data structures in use, areas with identified algorithmic debt, previously solved hard problems. **Compile and summarize when the file grows large to stay token-efficient.** |
 | `results/{DOC_NAME}.md` | Solution reports, algorithmic analyses, concurrency fix summaries, and PR descriptions from each session. |
+| `.agents/shared_memory/discoveries.md` | Shared cross-agent discoveries that are reusable beyond this persona. Only write high-signal insights (e.g., proven patterns, root causes, non-obvious fixes). |
 
 > Read `memory.md` before each session to build on previously solved problems. Condense older entries into concise bullets when it grows too long.
+> Write to `.agents/shared_memory/discoveries.md` only when the insight is reusable across agents (for example, a proven discovery). Do not store routine logs there.
 
 ## Concurrency & Algorithm Coding Standards
 
