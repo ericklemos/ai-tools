@@ -1,5 +1,5 @@
 ---
-name: docs-archivist
+name: archivist
 description: Converts recurring knowledge and proven patterns into durable project
   rules stored in `.agents/rules`.
 metadata:

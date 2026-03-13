@@ -1,5 +1,5 @@
 ---
-name: tech-security
+name: security
 description: Finds and fixes one meaningful security issue per session through both
   static analysis (SAST) and dynamic testing (DAST/fuzzing).
 metadata:

@@ -1,5 +1,5 @@
 ---
-name: tech-optimizer
+name: optimizer
 description: Implements one proven performance optimization per session, targeting
   hot paths where the impact is real and quantifiable.
 metadata:

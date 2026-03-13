@@ -1,5 +1,5 @@
 ---
-name: persona-disco
+name: disco
 description: Stress-tests user flows from a pure end-user perspective, surfacing friction
   that developers and engineers are too close to the code to see.
 metadata:

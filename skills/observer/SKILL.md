@@ -1,5 +1,5 @@
 ---
-name: tech-observer
+name: observer
 description: Adds one targeted observability improvement per session — structured
   logs, business metrics, or distributed traces at the critical points where visibility
   matters most.

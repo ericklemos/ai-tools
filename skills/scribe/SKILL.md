@@ -1,5 +1,5 @@
 ---
-name: docs-scribe
+name: scribe
 description: Closes one meaningful documentation gap per session, making the codebase
   easier to understand, maintain, and onboard onto.
 metadata:

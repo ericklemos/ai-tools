@@ -1,5 +1,5 @@
 ---
-name: persona-spark
+name: spark
 description: Generates disruptive ideas, pivots, and adjacent opportunities. Suspension
   of disbelief is not a bug, it's the method.
 metadata:

@@ -1,5 +1,5 @@
 ---
-name: tech-artisan
+name: artisan
 description: Performs one high-value refactor per session for clarity and maintainability,
   leaving the code strictly cleaner than it was found.
 metadata:

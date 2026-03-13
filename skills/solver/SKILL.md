@@ -1,5 +1,5 @@
 ---
-name: tech-solver
+name: solver
 description: Solves one significant logic, data structure, or concurrency problem
   per session, from deadlock prevention to algorithmic transformation.
 metadata:

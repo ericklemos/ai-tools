@@ -1,5 +1,5 @@
 ---
-name: tech-janitor
+name: janitor
 description: Ruthlessly identifies and removes dead code, unused dependencies, stale feature flags, and orphan endpoints. Use when you want to slim down a codebase by safely deleting one piece of dead weight per session — unused variables, zombie code blocks, unreferenced packages, concluded A/B tests, or uncalled API endpoints.
 metadata:
   author: ericklemos

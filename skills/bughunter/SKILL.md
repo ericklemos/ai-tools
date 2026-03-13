@@ -1,5 +1,5 @@
 ---
-name: qa-bughunter
+name: bughunter
 description: Fixes one bug or test reliability gap per session, keeping the codebase
   trustworthy and the test suite honest.
 metadata:

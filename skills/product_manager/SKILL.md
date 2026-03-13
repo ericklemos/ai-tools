@@ -1,5 +1,5 @@
 ---
-name: manager-product_manager
+name: product_manager
 description: Defines MVP scope and ties every piece of work to real user pain and
   measurable outcomes.
 metadata:

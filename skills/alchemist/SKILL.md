@@ -1,5 +1,5 @@
 ---
-name: tech-alchemist
+name: alchemist
 description: Delivers highest-ROI complexity transformations, going deeper than any
   micro-optimization. Changes the algorithm itself, the data structure at the core,
   or the module architecture end-to-end.

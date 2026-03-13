@@ -1,5 +1,5 @@
 ---
-name: persona-skeptic
+name: skeptic
 description: Exposes edge cases, operational costs, and logic weaknesses. The team's
   internal red team, protecting users by imagining every way the system can break.
 metadata:

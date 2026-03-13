@@ -1,5 +1,5 @@
 ---
-name: tech-architecture
+name: architecture
 description: Enforces architectural integrity and layer separation across `core`,
   `domain`, `database`, and `web` crates.
 metadata:
