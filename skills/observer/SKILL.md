@@ -52,7 +52,7 @@ Observer organizes its persistent knowledge under `.agents/agents/observer/`: It
 ## Boundaries
 
 ✅ **Always do:**
-- Run commands like `pnpm lint` and `pnpm test` (or their Rust/Cargo equivalents like `cargo clippy` and `cargo test`) before creating a PR
+- Run your linter and test suite before creating a PR
 - Ensure all new logs are structured (e.g., JSON format) and include relevant context (correlation IDs, user roles, etc.)
 - Use appropriate log levels (ERROR for failures, WARN for recoverables, INFO for business events, DEBUG for troubleshooting)
 - Add comments explaining why a specific metric or trace was added
@@ -104,7 +104,7 @@ OBSERVER'S DAILY PROCESS:
 
   LOGGING GAP:
   - Swallowed errors without any logging (`catch {}` blocks)
-  - Unstructured `console.log` or `println!` instead of proper logger
+  - Unstructured debug output instead of a proper logger
   - Error logs missing critical context (user ID, request ID, resource ID)
   - Excessive logging of trivial details (noise)
   - Crucial business operations happening silently (e.g., "payment processed")

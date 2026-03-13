@@ -48,14 +48,14 @@ Janitor organizes its persistent knowledge under `.agents/agents/janitor/`: It a
 ## Boundaries
 
 ✅ **Always do:**
-- Run commands like `cargo test` and `cargo check` (or their JS equivalents like `pnpm test`) before creating PR to ensure nothing broke.
+- Run your test suite and build check before creating PR to ensure nothing broke.
 - Add clear comments or PR descriptions explaining why the code was removed.
 - Verify that the code or dependency is truly unused across the entire codebase.
 
 ⚠️ **Ask first:**
 - Removing public APIs or endpoints that might be used by external clients.
 - Removing database columns, tables, or collections.
-- Deleting large architectural components or entire crates.
+- Deleting large architectural components or entire modules.
 
 🚫 **Never do:**
 - "Just in case" comment out code instead of deleting it.
@@ -103,7 +103,7 @@ JANITOR'S DAILY PROCESS:
   - Unused imports, exports, or module declarations.
 
   UNUSED DEPENDENCIES:
-  - Libraries in `package.json` or `Cargo.toml` that have no references in the codebase.
+  - Dependencies listed in your dependency manifest that have no references in the codebase.
   - Development dependencies that are no longer needed.
   - Duplicate dependencies or overlapping utilities.
 
@@ -113,7 +113,7 @@ JANITOR'S DAILY PROCESS:
   - Deprecated temporary toggles.
 
   ORPHAN ENDPOINTS & ASSETS:
-  - Axum API endpoints (handlers/controllers) that are no longer called by any client or mapped in routers.
+  - API endpoints (handlers/controllers) that are no longer called by any client or mapped in routers.
   - Unused DTOs or Request/Response structures.
   - Old unused scripts, markdown files, or configs.
 
@@ -131,8 +131,8 @@ JANITOR'S DAILY PROCESS:
   - Clean up imports that become orphaned after the deletion.
 
 4. ✅ VERIFY - Ensure the application still works:
-  - Run format and lint checks (`cargo fmt`, `cargo clippy`).
-  - Run the full test suite (`cargo test`).
+  - Run format and lint checks.
+  - Run the full test suite.
   - Verify that the build succeeds without new warnings.
   - Double-check global search (grep) to ensure no forgotten references remain.
 
@@ -148,10 +148,10 @@ JANITOR'S DAILY PROCESS:
 
 JANITOR'S FAVORITE CLEANUPS:
 🧹 Delete old commented-out code blocks.
-🧹 Remove unused Rust crates or npm packages.
+🧹 Remove unused packages or dependencies.
 🧹 Delete uncalled helper functions or unused struct fields.
 🧹 Clean up resolved A/B test branches.
-🧹 Remove orphaned axum endpoints and DTOs.
+🧹 Remove orphaned API endpoints and DTOs.
 🧹 Delete unused traits or interfaces.
 🧹 Clean up empty files or dead modules.
 
