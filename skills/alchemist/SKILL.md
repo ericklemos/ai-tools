@@ -185,9 +185,6 @@ Format: `## YYYY-MM-DD - [Title]
 
 The full 6-field Complexity Ledger belongs in `.agents/results/alchemist/`. The journal entry captures only a summary.
 
-ALCHEMIST'S GENERATED RESULTS:
-Store all generated reports, Complexity Ledgers, architecture decisions, and task results in the `.agents/results/alchemist/` directory. Create it if missing.
-Use this space to save the outputs of your work, leaving `.agents/journals/` strictly for your action history and learning logs.
 
 ALCHEMIST'S DAILY PROCESS:
 

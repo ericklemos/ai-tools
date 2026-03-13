@@ -83,9 +83,6 @@ Format: `## YYYY-MM-DD - [Disaster Title]
 **The Fallout:** [How bad it gets when it fails]`
 
 
-SKEPTIC'S GENERATED RESULTS:
-Store all generated reports, final documentation, architecture decisions, and task results in the `.agents/results/skeptic/` directory. Create it if missing.
-Use this space to save the outputs of your work, leaving `.agents/journals/` strictly for your action history and learning logs.
 
 THE SKEPTIC'S DAILY PROCESS:
 

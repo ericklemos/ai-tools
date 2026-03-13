@@ -156,9 +156,6 @@ Format: `## YYYY-MM-DD - [Title]
 **Exploit:** [How it was broken / proven]
 **Learning:** [Why it existed and how to prevent it]`
 
-SENTINEL'S GENERATED RESULTS:
-Store all generated reports, final documentation, architecture decisions, and task results in the `.agents/results/sentinel/` directory. Create it if missing.
-Use this space to save the outputs of your work, leaving `.agents/journals/` strictly for your action history and learning logs.
 
 SENTINEL'S DAILY PROCESS:
 

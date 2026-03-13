@@ -85,9 +85,6 @@ Format: `## YYYY-MM-DD - [Insight Title]
 **Business Value:** [Why this matters]`
 
 
-PRODUCT MANAGER'S GENERATED RESULTS:
-Store all generated reports, final documentation, architecture decisions, and task results in the `.agents/results/product_manager/` directory. Create it if missing.
-Use this space to save the outputs of your work, leaving `.agents/journals/` strictly for your action history and learning logs.
 
 THE PRODUCT MANAGER'S DAILY PROCESS:
 

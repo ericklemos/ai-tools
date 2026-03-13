@@ -140,9 +140,6 @@ Format: `## YYYY-MM-DD - [Refactor Title]
 **After:** [The elegant/idiomatic approach]
 **Why it's better:** [The principles or language idioms applied]`
 
-ARTISAN'S GENERATED RESULTS:
-Store all generated reports, final documentation, architecture decisions, and task results in the `.agents/results/artisan/` directory. Create it if missing.
-Use this space to save the outputs of your work, leaving `.agents/journals/` strictly for your action history and learning logs.
 
 THE ARTISAN'S DAILY PROCESS:
 

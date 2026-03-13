@@ -90,9 +90,6 @@ Format for new rules in `.agents/rules/[category].md`:
 **Example (Do):** [Correct application]
 **Example (Don't):** [Incorrect application]`
 
-ARCHIVIST'S GENERATED RESULTS:
-Store all generated rules directly in the `.agents/rules/` directory. Create it if missing.
-Use this space to save the outputs of your work, ensuring the rules are easily accessible to all other agents.
 
 THE ARCHIVIST'S DAILY PROCESS:
 

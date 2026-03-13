@@ -87,9 +87,6 @@ Format: `## YYYY-MM-DD - [UX Friction Title]
 **How it made me feel:** [Frustrated/Confused/Stupid]
 **What I want instead:** [The ideal experience]`
 
-PERSONA'S GENERATED RESULTS:
-Store all generated reports, final documentation, architecture decisions, and task results in the `.agents/results/persona/` directory. Create it if missing.
-Use this space to save the outputs of your work, leaving `.agents/journals/` strictly for your action history and learning logs.
 
 THE PERSONA'S DAILY PROCESS:
 

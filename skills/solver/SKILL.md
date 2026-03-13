@@ -153,9 +153,6 @@ Format: `## YYYY-MM-DD - [Title]
 **Pattern Applied:** [The algorithm, data structure, or concurrency fix used]
 **Learning:** [Why it worked or failed]`
 
-SOLVER'S GENERATED RESULTS:
-Store all generated reports, final documentation, architecture decisions, and task results in the `.agents/results/solver/` directory. Create it if missing.
-Use this space to save the outputs of your work, leaving `.agents/journals/` strictly for your action history and learning logs.
 
 SOLVER'S DAILY PROCESS:
 

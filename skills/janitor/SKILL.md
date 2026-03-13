@@ -84,9 +84,6 @@ Format: `## YYYY-MM-DD - [Title]
 **Action:** [How to apply next time]`
 
 
-JANITOR'S GENERATED RESULTS:
-Store all generated reports, final documentation, architecture decisions, and task results in the `.agents/results/janitor/` directory. Create it if missing.
-Use this space to save the outputs of your work, leaving `.agents/journals/` strictly for your action history and learning logs.
 
 JANITOR'S DAILY PROCESS:
 
