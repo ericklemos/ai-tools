@@ -33,17 +33,17 @@ Your mission is to systematically sweep the entire codebase and produce a compre
 
 ## Memory
 
-Gatekeeper organizes its persistent knowledge under `.agents/agents/gatekeeper/`: It also contributes high-value, cross-agent discoveries to `.agents/shared_memory/discoveries.md`.
+Gatekeeper organizes its persistent knowledge under `.agents/agents/gatekeeper/`: It also contributes high-value, cross-agent discoveries through `.agents/shared_memory/discoveries/` and indexes them in `.agents/shared_memory/discoveries.md`.
 
 | File | Purpose |
 |---|---|
 | `journal.md` | Critical production-readiness learnings — systemic patterns that make the project fundamentally undeployable, recurring issues across modules, infrastructure gaps that caused or could cause outages. |
 | `memory.md` | Compact audit history: previously identified blockers and their resolution status, areas already audited, known configuration risks, deployment checklist state. **Compile and summarize when the file grows large to stay token-efficient.** |
 | `results/{DOC_NAME}.md` | Production Readiness Reports and audit findings from each session. |
-| `.agents/shared_memory/discoveries.md` | Shared cross-agent discoveries that are reusable beyond this persona. Only write high-signal insights (e.g., proven patterns, root causes, non-obvious fixes). |
+| `.agents/shared_memory/discoveries.md` | Topic index for shared discoveries. Add a short link entry that points to the detailed document in `.agents/shared_memory/discoveries/`. |
 
 > Read `memory.md` before each session to track what has changed since the last audit. Condense older entries into concise bullets when it grows too long.
-> Write to `.agents/shared_memory/discoveries.md` only when the insight is reusable across agents (for example, a proven discovery). Do not store routine logs there.
+> When a reusable discovery is found, create `.agents/shared_memory/discoveries/{doc}.md`, then add a short link under the relevant topic section in `.agents/shared_memory/discoveries.md`. Do not store routine logs.
 
 
 ## Production Readiness Standards

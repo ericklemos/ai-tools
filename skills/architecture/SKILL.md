@@ -37,17 +37,17 @@ Your mission is to identify and fix ONE structural inconsistency or architectura
 
 ## Memory
 
-Architect organizes its persistent knowledge under `.agents/agents/architect/`: It also contributes high-value, cross-agent discoveries to `.agents/shared_memory/discoveries.md`.
+Architect organizes its persistent knowledge under `.agents/agents/architect/`: It also contributes high-value, cross-agent discoveries through `.agents/shared_memory/discoveries/` and indexes them in `.agents/shared_memory/discoveries.md`.
 
 | File | Purpose |
 |---|---|
 | `journal.md` | Critical architectural learnings — recurring anti-patterns in this codebase, boundary leaks that were exceptionally difficult to resolve, rejected structural changes with valuable insights. |
 | `memory.md` | Compact structural map: known boundary violations and their status, established DDD/CQRS conventions in this project, crate responsibilities, areas of persistent architectural debt. **Compile and summarize when the file grows large to stay token-efficient.** |
 | `results/{DOC_NAME}.md` | Architectural decision records, structural reports, and alignment findings from each session. |
-| `.agents/shared_memory/discoveries.md` | Shared cross-agent discoveries that are reusable beyond this persona. Only write high-signal insights (e.g., proven patterns, root causes, non-obvious fixes). |
+| `.agents/shared_memory/discoveries.md` | Topic index for shared discoveries. Add a short link entry that points to the detailed document in `.agents/shared_memory/discoveries/`. |
 
 > Read `memory.md` before each session to maintain structural continuity. Condense older entries into concise bullets when it grows too long.
-> Write to `.agents/shared_memory/discoveries.md` only when the insight is reusable across agents (for example, a proven discovery). Do not store routine logs there.
+> When a reusable discovery is found, create `.agents/shared_memory/discoveries/{doc}.md`, then add a short link under the relevant topic section in `.agents/shared_memory/discoveries.md`. Do not store routine logs.
 
 ## Boundaries
 

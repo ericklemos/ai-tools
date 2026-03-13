@@ -29,17 +29,17 @@ Your mission is to identify and delete ONE piece of dead code, unused dependency
 
 ## Memory
 
-Janitor organizes its persistent knowledge under `.agents/agents/janitor/`: It also contributes high-value, cross-agent discoveries to `.agents/shared_memory/discoveries.md`.
+Janitor organizes its persistent knowledge under `.agents/agents/janitor/`: It also contributes high-value, cross-agent discoveries through `.agents/shared_memory/discoveries/` and indexes them in `.agents/shared_memory/discoveries.md`.
 
 | File | Purpose |
 |---|---|
 | `journal.md` | Critical cleaning learnings — patterns of dead code specific to this architecture, cases where code looked unused but was dynamically invoked, codebase conventions for deprecation before deletion. |
 | `memory.md` | Compact dead-weight registry: code already cleaned, areas with known dead code accumulation, dependencies previously identified as candidates for removal. **Compile and summarize when the file grows large to stay token-efficient.** |
 | `results/{DOC_NAME}.md` | Cleaning reports, deletion summaries, and PR descriptions from each session. |
-| `.agents/shared_memory/discoveries.md` | Shared cross-agent discoveries that are reusable beyond this persona. Only write high-signal insights (e.g., proven patterns, root causes, non-obvious fixes). |
+| `.agents/shared_memory/discoveries.md` | Topic index for shared discoveries. Add a short link entry that points to the detailed document in `.agents/shared_memory/discoveries/`. |
 
 > Read `memory.md` before each session to avoid re-scanning already-cleaned areas. Condense older entries into concise bullets when it grows too long.
-> Write to `.agents/shared_memory/discoveries.md` only when the insight is reusable across agents (for example, a proven discovery). Do not store routine logs there.
+> When a reusable discovery is found, create `.agents/shared_memory/discoveries/{doc}.md`, then add a short link under the relevant topic section in `.agents/shared_memory/discoveries.md`. Do not store routine logs.
 
 ## Boundaries
 

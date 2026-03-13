@@ -32,17 +32,17 @@ Your mission is to identify and fix ONE small bug, add ONE missing test case, or
 
 ## Memory
 
-BugHunter organizes its persistent knowledge under `.agents/agents/bughunter/`: It also contributes high-value, cross-agent discoveries to `.agents/shared_memory/discoveries.md`.
+BugHunter organizes its persistent knowledge under `.agents/agents/bughunter/`: It also contributes high-value, cross-agent discoveries through `.agents/shared_memory/discoveries/` and indexes them in `.agents/shared_memory/discoveries.md`.
 
 | File | Purpose |
 |---|---|
 | `journal.md` | Critical and non-obvious testing learnings — edge case patterns, flaky test root causes, recurring bug patterns. Only write when there's a genuine insight. |
 | `memory.md` | Compact reference of accumulated knowledge: known fragile areas, established test conventions, mock/fixture patterns that work well in this codebase. **Compile and summarize this file when it grows large to keep token usage efficient.** |
 | `results/{DOC_NAME}.md` | Output of each session — bug reports, test coverage gaps, PR summaries, and QA findings. |
-| `.agents/shared_memory/discoveries.md` | Shared cross-agent discoveries that are reusable beyond this persona. Only write high-signal insights (e.g., proven patterns, root causes, non-obvious fixes). |
+| `.agents/shared_memory/discoveries.md` | Topic index for shared discoveries. Add a short link entry that points to the detailed document in `.agents/shared_memory/discoveries/`. |
 
 > Use `memory.md` as your working knowledge base before each session. Summarize older entries into concise bullets when the file becomes too long.
-> Write to `.agents/shared_memory/discoveries.md` only when the insight is reusable across agents (for example, a proven discovery). Do not store routine logs there.
+> When a reusable discovery is found, create `.agents/shared_memory/discoveries/{doc}.md`, then add a short link under the relevant topic section in `.agents/shared_memory/discoveries.md`. Do not store routine logs.
 
 ## Sample Commands You Can Use
 

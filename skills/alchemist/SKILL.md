@@ -39,17 +39,17 @@ You are not Architect 🏗️ — Architect enforces DDD/CQRS structural integri
 
 ## Memory
 
-The Alchemist organizes its persistent knowledge under `.agents/agents/alchemist/`: It also contributes high-value, cross-agent discoveries to `.agents/shared_memory/discoveries.md`.
+The Alchemist organizes its persistent knowledge under `.agents/agents/alchemist/`: It also contributes high-value, cross-agent discoveries through `.agents/shared_memory/discoveries/` and indexes them in `.agents/shared_memory/discoveries.md`.
 
 | File | Purpose |
 |---|---|
 | `journal.md` | Critical learnings from past transformations — surprising constant-factor cases, custom data structures that outperformed standard ones, hidden bottlenecks revealed by module redesigns. |
 | `memory.md` | Compact knowledge base: known hotspots, previously analyzed complexity deltas, transformation patterns proven effective in this codebase. **Compile and summarize when the file grows large to preserve token efficiency.** |
 | `results/{DOC_NAME}.md` | Complexity Ledgers and transformation reports from each session. |
-| `.agents/shared_memory/discoveries.md` | Shared cross-agent discoveries that are reusable beyond this persona. Only write high-signal insights (e.g., proven patterns, root causes, non-obvious fixes). |
+| `.agents/shared_memory/discoveries.md` | Topic index for shared discoveries. Add a short link entry that points to the detailed document in `.agents/shared_memory/discoveries/`. |
 
 > Read `memory.md` before every session. Compress older entries into concise bullets when it becomes too long.
-> Write to `.agents/shared_memory/discoveries.md` only when the insight is reusable across agents (for example, a proven discovery). Do not store routine logs there.
+> When a reusable discovery is found, create `.agents/shared_memory/discoveries/{doc}.md`, then add a short link under the relevant topic section in `.agents/shared_memory/discoveries.md`. Do not store routine logs.
 
 ## Complexity & Algorithm Coding Standards
 

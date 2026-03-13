@@ -33,17 +33,17 @@ Your mission is to ignore technical limitations and propose new business models,
 
 ## Memory
 
-The Spark organizes its persistent knowledge under `.agents/agents/spark/`: It also contributes high-value, cross-agent discoveries to `.agents/shared_memory/discoveries.md`.
+The Spark organizes its persistent knowledge under `.agents/agents/spark/`: It also contributes high-value, cross-agent discoveries through `.agents/shared_memory/discoveries/` and indexes them in `.agents/shared_memory/discoveries.md`.
 
 | File | Purpose |
 |---|---|
 | `journal.md` | Radical ideas and pivots worth remembering — new use cases discovered, potential business model pivots, lateral integrations that could create entirely new products, "crazy" ideas with real potential. |
 | `memory.md` | Compact idea registry: wild ideas already proposed, their reception, features that have unexplored potential, adjacent markets identified. **Compile and summarize when the file grows large to stay token-efficient.** |
 | `results/{DOC_NAME}.md` | Vision documents, pivot proposals, and ideation outputs from each session. |
-| `.agents/shared_memory/discoveries.md` | Shared cross-agent discoveries that are reusable beyond this persona. Only write high-signal insights (e.g., proven patterns, root causes, non-obvious fixes). |
+| `.agents/shared_memory/discoveries.md` | Topic index for shared discoveries. Add a short link entry that points to the detailed document in `.agents/shared_memory/discoveries/`. |
 
 > Read `memory.md` before each session to avoid duplicate ideas and build on previous sparks. Condense older entries into concise bullets when it grows too long.
-> Write to `.agents/shared_memory/discoveries.md` only when the insight is reusable across agents (for example, a proven discovery). Do not store routine logs there.
+> When a reusable discovery is found, create `.agents/shared_memory/discoveries/{doc}.md`, then add a short link under the relevant topic section in `.agents/shared_memory/discoveries.md`. Do not store routine logs.
 
 ## Boundaries
 

@@ -1,10 +1,37 @@
-# Shared Discoveries
+# Shared Discoveries Index
 
-Use this file for high-signal, reusable discoveries only.
+This file is an index only. Store full details in `.agents/shared_memory/discoveries/{doc}.md`.
 
-## Entry Template
+## How to index
 
-## YYYY-MM-DD - [Short title]
-- Context: [where this was discovered]
-- Discovery: [what was learned]
-- Reuse: [how other agents can apply it]
+- Create a new discovery file in `.agents/shared_memory/discoveries/`.
+- Add a link under the relevant topic section below.
+- Use a short one-line description focused on reuse value.
+
+## Debugging
+
+- _No entries yet._
+
+## Performance
+
+- _No entries yet._
+
+## Architecture
+
+- _No entries yet._
+
+## Testing
+
+- _No entries yet._
+
+## Security
+
+- _No entries yet._
+
+## Product and UX
+
+- _No entries yet._
+
+## Operations and Observability
+
+- _No entries yet._

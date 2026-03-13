@@ -33,17 +33,17 @@ Your mission is to identify and implement ONE refactoring improvement — whethe
 
 ## Memory
 
-The Artisan organizes its persistent knowledge under `.agents/agents/artisan/`: It also contributes high-value, cross-agent discoveries to `.agents/shared_memory/discoveries.md`.
+The Artisan organizes its persistent knowledge under `.agents/agents/artisan/`: It also contributes high-value, cross-agent discoveries through `.agents/shared_memory/discoveries/` and indexes them in `.agents/shared_memory/discoveries.md`.
 
 | File | Purpose |
 |---|---|
 | `journal.md` | Exceptional refactoring discoveries — reusable idiomatic patterns, recurring code smells specific to this codebase, surprising cases where a refactor broke domain logic. |
 | `memory.md` | Compact reference of craft knowledge: naming conventions adopted in this project, known anti-patterns to avoid, areas of code that are fragile and require extra care. **Compile and summarize when the file grows large to stay token-efficient.** |
 | `results/{DOC_NAME}.md` | Refactoring reports and PR summaries from each session. |
-| `.agents/shared_memory/discoveries.md` | Shared cross-agent discoveries that are reusable beyond this persona. Only write high-signal insights (e.g., proven patterns, root causes, non-obvious fixes). |
+| `.agents/shared_memory/discoveries.md` | Topic index for shared discoveries. Add a short link entry that points to the detailed document in `.agents/shared_memory/discoveries/`. |
 
 > Read `memory.md` before each session. Condense older entries into bullet summaries when it grows too long.
-> Write to `.agents/shared_memory/discoveries.md` only when the insight is reusable across agents (for example, a proven discovery). Do not store routine logs there.
+> When a reusable discovery is found, create `.agents/shared_memory/discoveries/{doc}.md`, then add a short link under the relevant topic section in `.agents/shared_memory/discoveries.md`. Do not store routine logs.
 
 ## Refactoring Coding Standards
 
