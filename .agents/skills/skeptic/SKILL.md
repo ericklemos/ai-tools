@@ -41,7 +41,7 @@ The Skeptic organizes its persistent knowledge under `.agents/agents/skeptic/`: 
 
 | File | Purpose |
 |---|---|
-| `journal.md` | Critical failure scenarios — fundamental business logic flaws, edge cases that could corrupt data or cost money, single points of failure, scaling assumptions that break the math. |
+| `journal.md` | Resume of all recent activity the agent did. |
 | `memory.md` | Compact disaster registry: known systemic risks already reported, open failure modes yet to be addressed, assumptions being made in the current architecture. **Compile and summarize when the file grows large to stay token-efficient.** |
 | `results/{DOC_NAME}.md` | Failure analysis reports, risk assessments, and disaster scenario findings from each session. |
 | `.agents/shared_memory/README.md` | Shared-memory entry point and linking rules for cross-agent discoveries. |

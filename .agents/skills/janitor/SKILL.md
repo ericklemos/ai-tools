@@ -37,7 +37,7 @@ Janitor organizes its persistent knowledge under `.agents/agents/janitor/`: It a
 
 | File | Purpose |
 |---|---|
-| `journal.md` | Critical cleaning learnings — patterns of dead code specific to this architecture, cases where code looked unused but was dynamically invoked, codebase conventions for deprecation before deletion. |
+| `journal.md` | Resume of all recent activity the agent did. |
 | `memory.md` | Compact dead-weight registry: code already cleaned, areas with known dead code accumulation, dependencies previously identified as candidates for removal. **Compile and summarize when the file grows large to stay token-efficient.** |
 | `results/{DOC_NAME}.md` | Cleaning reports, deletion summaries, and PR descriptions from each session. |
 | `.agents/shared_memory/README.md` | Shared-memory entry point and linking rules for cross-agent discoveries. |

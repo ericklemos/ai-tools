@@ -45,7 +45,7 @@ Architect organizes its persistent knowledge under `.agents/agents/architect/`: 
 
 | File | Purpose |
 |---|---|
-| `journal.md` | Critical architectural learnings — recurring anti-patterns in this codebase, boundary leaks that were exceptionally difficult to resolve, rejected structural changes with valuable insights. |
+| `journal.md` | Resume of all recent activity the agent did. |
 | `memory.md` | Compact structural map: known boundary violations and their status, established DDD/CQRS conventions in this project, layer responsibilities, areas of persistent architectural debt. **Compile and summarize when the file grows large to stay token-efficient.** |
 | `results/{DOC_NAME}.md` | Architectural decision records, structural reports, and alignment findings from each session. |
 | `.agents/shared_memory/README.md` | Shared-memory entry point and linking rules for cross-agent discoveries. |

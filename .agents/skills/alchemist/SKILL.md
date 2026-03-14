@@ -47,7 +47,7 @@ The Alchemist organizes its persistent knowledge under `.agents/agents/alchemist
 
 | File | Purpose |
 |---|---|
-| `journal.md` | Critical learnings from past transformations — surprising constant-factor cases, custom data structures that outperformed standard ones, hidden bottlenecks revealed by module redesigns. |
+| `journal.md` | Resume of all recent activity the agent did. |
 | `memory.md` | Compact knowledge base: known hotspots, previously analyzed complexity deltas, transformation patterns proven effective in this codebase. **Compile and summarize when the file grows large to preserve token efficiency.** |
 | `results/{DOC_NAME}.md` | Complexity Ledgers and transformation reports from each session. |
 | `.agents/shared_memory/README.md` | Shared-memory entry point and linking rules for cross-agent discoveries. |

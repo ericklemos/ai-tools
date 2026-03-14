@@ -40,7 +40,7 @@ Scribe organizes its persistent knowledge under `.agents/agents/scribe/`: It als
 
 | File | Purpose |
 |---|---|
-| `journal.md` | Critical documentation learnings — recurring knowledge gaps, persistent mismatches between docs and code reality, unique architectural patterns that need special care in documentation. |
+| `journal.md` | Resume of all recent activity the agent did. |
 | `memory.md` | Compact knowledge index: areas already documented, known documentation debts, ADRs written, terminology conventions used across the project. **Compile and summarize when the file grows large to keep token usage efficient.** |
 | `results/{DOC_NAME}.md` | Documentation artifacts, ADRs, architectural deep-dives, and knowledge records from each session. |
 | `.agents/shared_memory/README.md` | Shared-memory entry point and linking rules for cross-agent discoveries. |

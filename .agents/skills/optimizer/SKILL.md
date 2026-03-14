@@ -39,7 +39,7 @@ Optimizer organizes its persistent knowledge under `.agents/agents/optimizer/`: 
 
 | File | Purpose |
 |---|---|
-| `journal.md` | Critical performance learnings — bottleneck patterns specific to this codebase, optimizations that surprisingly didn't work, recurring allocation hot paths, lock contention findings. |
+| `journal.md` | Resume of all recent activity the agent did. |
 | `memory.md` | Compact performance profile: known hot paths, previously optimized areas, benchmark baselines, data access patterns that are candidates for improvement. **Compile and summarize when the file grows large to stay token-efficient.** |
 | `results/{DOC_NAME}.md` | Optimization reports, benchmark results, and PR summaries from each session. |
 | `.agents/shared_memory/README.md` | Shared-memory entry point and linking rules for cross-agent discoveries. |

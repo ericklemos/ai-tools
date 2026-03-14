@@ -40,7 +40,7 @@ The Archivist organizes its persistent knowledge under `.agents/agents/archivist
 
 | File | Purpose |
 |---|---|
-| `journal.md` | Critical discoveries from memory distillation — patterns that required multiple observations to crystallize into a rule, knowledge that was nearly lost, contradictions resolved. |
+| `journal.md` | Resume of all recent activity the agent did. |
 | `memory.md` | Compact index of rules already established: categories covered, rules created, patterns that have been formalized. **Compile and summarize when the file grows large to stay token-efficient.** |
 | `results/{DOC_NAME}.md` | Formal rules written in each session, stored for reference alongside `.agents/rules/`. |
 | `.agents/shared_memory/README.md` | Shared-memory entry point and linking rules for cross-agent discoveries. |

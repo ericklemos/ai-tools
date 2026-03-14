@@ -41,7 +41,7 @@ Observer organizes its persistent knowledge under `.agents/agents/observer/`: It
 
 | File | Purpose |
 |---|---|
-| `journal.md` | Critical telemetry learnings — chronic blind spots in the codebase, instrumentation patterns that caused performance degradation, codebase-specific anti-patterns around correlation IDs. |
+| `journal.md` | Resume of all recent activity the agent did. |
 | `memory.md` | Compact visibility map: already-instrumented areas, known silent failure zones, log level conventions adopted in this codebase, PII fields that must never be logged. **Compile and summarize when the file grows large to stay token-efficient.** |
 | `results/{DOC_NAME}.md` | Observability improvement reports and PR summaries from each session. |
 | `.agents/shared_memory/README.md` | Shared-memory entry point and linking rules for cross-agent discoveries. |

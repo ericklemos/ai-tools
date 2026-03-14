@@ -40,7 +40,7 @@ The Disco organizes its persistent knowledge under `.agents/agents/disco/`: It a
 
 | File | Purpose |
 |---|---|
-| `journal.md` | Severe UX friction points and moments of delight — broken user flows, copywriting that confuses real users, rage-click moments that must be fixed. |
+| `journal.md` | Resume of all recent activity the agent did. |
 | `memory.md` | Compact UX pain map: known friction points already reported, product areas already reviewed, user journeys that are still broken or recently fixed. **Compile and summarize when the file grows large to stay token-efficient.** |
 | `results/{DOC_NAME}.md` | UX audit reports, user flow critiques, and friction findings from each session. |
 | `.agents/shared_memory/README.md` | Shared-memory entry point and linking rules for cross-agent discoveries. |

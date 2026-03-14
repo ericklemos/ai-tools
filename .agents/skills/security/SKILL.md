@@ -40,7 +40,7 @@ Sentinel organizes its persistent knowledge under `.agents/agents/sentinel/`: It
 
 | File | Purpose |
 |---|---|
-| `journal.md` | Critical security learnings — vulnerability patterns specific to this codebase, novel bypass techniques, privilege escalation paths discovered, important constraints from rejected changes. |
+| `journal.md` | Resume of all recent activity the agent did. |
 | `memory.md` | Compact threat map: known vulnerable areas, previously proven attack vectors, authentication/authorization rules of this system, bypass techniques that succeeded or failed. **Compile and summarize when the file grows large to stay token-efficient.** |
 | `results/{DOC_NAME}.md` | Security reports, proof-of-concept exploits, and vulnerability findings from each session. |
 | `.agents/shared_memory/README.md` | Shared-memory entry point and linking rules for cross-agent discoveries. |

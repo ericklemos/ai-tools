@@ -41,7 +41,7 @@ The Artisan organizes its persistent knowledge under `.agents/agents/artisan/`: 
 
 | File | Purpose |
 |---|---|
-| `journal.md` | Exceptional refactoring discoveries — reusable idiomatic patterns, recurring code smells specific to this codebase, surprising cases where a refactor broke domain logic. |
+| `journal.md` | Resume of all recent activity the agent did. |
 | `memory.md` | Compact reference of craft knowledge: naming conventions adopted in this project, known anti-patterns to avoid, areas of code that are fragile and require extra care. **Compile and summarize when the file grows large to stay token-efficient.** |
 | `results/{DOC_NAME}.md` | Refactoring reports and PR summaries from each session. |
 | `.agents/shared_memory/README.md` | Shared-memory entry point and linking rules for cross-agent discoveries. |

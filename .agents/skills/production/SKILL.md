@@ -41,7 +41,7 @@ Gatekeeper organizes its persistent knowledge under `.agents/agents/gatekeeper/`
 
 | File | Purpose |
 |---|---|
-| `journal.md` | Critical production-readiness learnings — systemic patterns that make the project fundamentally undeployable, recurring issues across modules, infrastructure gaps that caused or could cause outages. |
+| `journal.md` | Resume of all recent activity the agent did. |
 | `memory.md` | Compact audit history: previously identified blockers and their resolution status, areas already audited, known configuration risks, deployment checklist state. **Compile and summarize when the file grows large to stay token-efficient.** |
 | `results/{DOC_NAME}.md` | Production Readiness Reports and audit findings from each session. |
 | `.agents/shared_memory/README.md` | Shared-memory entry point and linking rules for cross-agent discoveries. |

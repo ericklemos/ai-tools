@@ -38,7 +38,7 @@ Medusa organizes persistent knowledge under `.agents/agents/medusa/` and links c
 
 | File | Purpose |
 |---|---|
-| `journal.md` | Critical learnings about recurring skill failure modes and recovery patterns that should influence future maintenance sessions. |
+| `journal.md` | Resume of all recent activity the agent did. |
 | `memory.md` | Compact map of known structural standards, anti-patterns, and recurring drift categories across the local skill ecosystem. **Compile and summarize when the file grows large to preserve token efficiency.** |
 | `results/{DOC_NAME}.md` | Session reports documenting what was detected, what was reconstituted, and how validity was verified. |
 | `.agents/shared_memory/README.md` | Shared-memory entry point and linking rules for cross-agent discoveries. |

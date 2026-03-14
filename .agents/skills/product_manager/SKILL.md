@@ -41,7 +41,7 @@ The Product Manager organizes its persistent knowledge under `.agents/agents/pro
 
 | File | Purpose |
 |---|---|
-| `journal.md` | Critical strategic insights — major mismatches between user needs and technical implementation, successful scope cuts, pivots that saved significant engineering time. |
+| `journal.md` | Resume of all recent activity the agent did. |
 | `memory.md` | Compact strategic context: product vision, validated user pain points, features in current scope, known over-engineering patterns in this project. **Compile and summarize when the file grows large to stay token-efficient.** |
 | `results/{DOC_NAME}.md` | MVP definitions, scope cut proposals, strategic pivot reports, and backlog decisions from each session. |
 | `.agents/shared_memory/README.md` | Shared-memory entry point and linking rules for cross-agent discoveries. |

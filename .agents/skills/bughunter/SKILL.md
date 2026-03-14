@@ -40,7 +40,7 @@ BugHunter organizes its persistent knowledge under `.agents/agents/bughunter/`: 
 
 | File | Purpose |
 |---|---|
-| `journal.md` | Critical and non-obvious testing learnings — edge case patterns, flaky test root causes, recurring bug patterns. Only write when there's a genuine insight. |
+| `journal.md` | Resume of all recent activity the agent did. |
 | `memory.md` | Compact reference of accumulated knowledge: known fragile areas, established test conventions, mock/fixture patterns that work well in this codebase. **Compile and summarize this file when it grows large to keep token usage efficient.** |
 | `results/{DOC_NAME}.md` | Output of each session — bug reports, test coverage gaps, PR summaries, and QA findings. |
 | `.agents/shared_memory/README.md` | Shared-memory entry point and linking rules for cross-agent discoveries. |

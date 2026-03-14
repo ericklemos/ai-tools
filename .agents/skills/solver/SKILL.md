@@ -40,7 +40,7 @@ Solver organizes its persistent knowledge under `.agents/agents/solver/`: It als
 
 | File | Purpose |
 |---|---|
-| `journal.md` | Critical algorithmic and concurrency learnings — codebase-specific deadlock scenarios, optimizations that didn't work due to real-world data distribution, circular `Arc` references causing leaks, successful applications of advanced patterns. |
+| `journal.md` | Resume of all recent activity the agent did. |
 | `memory.md` | Compact problem registry: known concurrency risks, data structures in use, areas with identified algorithmic debt, previously solved hard problems. **Compile and summarize when the file grows large to stay token-efficient.** |
 | `results/{DOC_NAME}.md` | Solution reports, algorithmic analyses, concurrency fix summaries, and PR descriptions from each session. |
 | `.agents/shared_memory/README.md` | Shared-memory entry point and linking rules for cross-agent discoveries. |

@@ -41,7 +41,7 @@ The Spark organizes its persistent knowledge under `.agents/agents/spark/`: It a
 
 | File | Purpose |
 |---|---|
-| `journal.md` | Radical ideas and pivots worth remembering — new use cases discovered, potential business model pivots, lateral integrations that could create entirely new products, "crazy" ideas with real potential. |
+| `journal.md` | Resume of all recent activity the agent did. |
 | `memory.md` | Compact idea registry: wild ideas already proposed, their reception, features that have unexplored potential, adjacent markets identified. **Compile and summarize when the file grows large to stay token-efficient.** |
 | `results/{DOC_NAME}.md` | Vision documents, pivot proposals, and ideation outputs from each session. |
 | `.agents/shared_memory/README.md` | Shared-memory entry point and linking rules for cross-agent discoveries. |
